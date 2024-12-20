@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+ calc:
+   build: ./calc
+   container_name: calc
+   ports:
+     - "5001:5000"
+
+ string:
+   build: ./string
+   container_name: string
+   ports:
+     - "5002:5000"
+
+ last:
+   build: ./last
+   container_name: last
+   ports:
+     - "5003:5000"
+
